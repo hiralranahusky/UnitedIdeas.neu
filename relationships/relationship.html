@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+	<link type="text/css" rel="stylesheet" href="relationship.css">
+    <link type="text/css" rel="stylesheet" href="other-relationship.css">
+	<title>UN Dashboard</title>
+  </head>
+  <body>
+		<div class="row">
+		<div class="col-lg-6 text-left">
+		<h4 class="card-category">Relationships</h4>
+		<h4 class="card-title">By Frequency
+		</h4>
+	</div>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="other-relationship.js"></script>
+    <script type="text/javascript">
+      var sm = new ScatterMatrix('relationship.csv');
+      sm.render();
+    </script>
+  </body>
+</html>
